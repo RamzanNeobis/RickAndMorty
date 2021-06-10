@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/personageFragment">
+
+    <fragment
+        android:id="@+id/personageFragment"
+        android:name="ru.startandroid.develop.rickandmorty.screens.personage.PersonageFragment"
+        android:label="Personage"
+        tools:layout="@layout/fragment_personage" >
+        <action
+            android:id="@+id/action_personageFragment_to_locationsFragment"
+            app:destination="@id/locationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationsFragment"
+        android:name="ru.startandroid.develop.rickandmorty.screens.locations.LocationsFragment"
+        android:label="Locations"
+        tools:layout="@layout/fragment_locations" >
+        <action
+            android:id="@+id/action_locationsFragment_to_episodesFragment"
+            app:destination="@id/episodesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodesFragment"
+        android:name="ru.startandroid.develop.rickandmorty.screens.episodes.EpisodesFragment"
+        android:label="Episodes"
+        tools:layout="@layout/fragment_episodes" >
+        <action
+            android:id="@+id/action_episodesFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="ru.startandroid.develop.rickandmorty.screens.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

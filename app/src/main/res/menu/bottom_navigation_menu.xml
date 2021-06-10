@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/personageFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="@string/personage_title"/>
+
+    <item
+        android:id="@+id/locationsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_location"
+        android:title="@string/location_title"/>
+
+    <item
+        android:id="@+id/episodesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_episodes"
+        android:title="@string/episodes_title"/>
+
+    <item
+        android:id="@+id/searchFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_title"/>
+
+
+
+</menu>
